@@ -14,7 +14,11 @@ public class MaxValueWithGeneric {
 				}
 			}
 		}
-		System.out.println(inputArray[n-1]);
+		printMax(inputArray);
+	}
+	public static <T> void printMax(T [] inputArray) {
+		int z = inputArray.length;
+		System.out.println(inputArray[z-1]);
 	}
 	public static void main( String args[] ) {
 		Integer [] intArray = {5,2,3,7,8,4};
@@ -24,10 +28,10 @@ public class MaxValueWithGeneric {
 		System.out.println( "Finding Maximum Integer Array" );  
 		MaxValue( intArray );   
 
-		System.out.println( "Printing Character Array" );  
+		System.out.println( "Finding Maximum Double Array" );  
 		MaxValue( doubleArray ); 
 
-		System.out.println( "Printing String Array" );  
+		System.out.println( "Finding Maximum String Array" );  
 		MaxValue( stringArray ); 
 	}   
 }
