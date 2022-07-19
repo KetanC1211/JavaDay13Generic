@@ -25,3 +25,4 @@ public class MaxValueWithGeneric {
 		MaxIntValue(8,5,18);
 	}
 }
+
