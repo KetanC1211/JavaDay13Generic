@@ -24,10 +24,10 @@ public class MaxValueWithGeneric {
 		System.out.println( "Finding Maximum Integer Array" );  
 		MaxValue( intArray );   
 
-		System.out.println( "Printing Character Array" );  
+		System.out.println( "Finding Maximum Double Array" );  
 		MaxValue( doubleArray ); 
 
-		System.out.println( "Printing String Array" );  
+		System.out.println( "Finding Maximum String Array" );  
 		MaxValue( stringArray ); 
 	}   
 }
