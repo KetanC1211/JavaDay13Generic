@@ -1,27 +1,28 @@
 package com.bridgelabz;
 
 public class MaxValueWithGeneric {
-	public static void MaxFloatValue(float x, float y, float z){
-		Float num1 = x;
-		Float num2 = y;
-		Float num3 = z;
-		Float max = num1;
-		if(num2.compareTo(max)>0) {
-			max = num2;
+
+	public static void MaxStrValue (String x, String y, String z){
+		String str1 = x;
+		String str2 = y;
+		String str3 = z;
+		String max = str1;
+		if(str2.compareTo(max)>0) {
+			max = str2;
 		}
-		if(num3.compareTo(max)>0) {
-			max = num3;
+		if(str3.compareTo(max)>0) {
+			max = str3;
 		}
 		System.out.println("Maximum number is "+max);
 	}
 
 	public static void main(String[] args) {
-		MaxFloatValue(8.5f,5.5f,18.7f);
+		MaxStrValue("Apple","Peach","Banana");
 		System.out.println("Test Case 1 keeping max at position 1");
-		MaxFloatValue(18.7f,5.5f,8.5f);
+		MaxStrValue("Peach","Apple","Banana");
 		System.out.println("Test Case 2 keeping max at position 2");
-		MaxFloatValue(5.5f,18.7f,8.5f);
+		MaxStrValue("Apple","Peach","Banana");
 		System.out.println("Test Case 3 keeping max at position 3");
-		MaxFloatValue(8.5f,5.5f,18.7f);
+		MaxStrValue("Apple","Banana","Peach");
 	}
 }
