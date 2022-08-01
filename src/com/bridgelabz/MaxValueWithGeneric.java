@@ -2,7 +2,7 @@ package com.bridgelabz;
 
 public class MaxValueWithGeneric {
 
-	public static < T extends Comparable <T> > void MaxValue(T[] inputArray) {  
+	public static < T extends Comparable <T> > void maxValue(T[] inputArray) {  
 
 		int n = inputArray.length;
 		for (int i = 0; i < n-1; i++){
@@ -26,13 +26,13 @@ public class MaxValueWithGeneric {
 		String [] stringArray = {"Apple","Peach","Banana","Kiwi"};
 
 		System.out.println( "Finding Maximum Integer Array" );  
-		MaxValue( intArray );   
+		maxValue( intArray );   
 
 		System.out.println( "Finding Maximum Double Array" );  
-		MaxValue( doubleArray ); 
+		maxValue( doubleArray ); 
 
 		System.out.println( "Finding Maximum String Array" );  
-		MaxValue( stringArray ); 
+		maxValue( stringArray ); 
 	}   
 }
 
